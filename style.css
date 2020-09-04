@@ -1,0 +1,180 @@
+body {
+    font-family: Noto Sans JP;
+    font-weight: 600;
+    min-width: 1160px;
+    background-color: #0C0C0C;
+    color: #E7E7E7;
+    cursor: default;
+}
+
+header {
+    height: 165px;
+}
+
+main {
+    width: 1347px;
+    margin: 0 auto;
+}
+
+nav {  
+    margin: 0 auto;
+}
+
+ul {
+    padding-inline-start: 0;
+    list-style-type : none; 
+}
+
+li {
+    padding: 19px 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+.active {
+    color: #00F2FF;
+}
+
+.top {
+    height: 60px;
+    width: 923px;
+    padding: 90px 0 90px 61px;
+    margin: 0 auto;
+}
+
+.add-post-btn {
+    height: 53px;
+    width: 119px;
+    border-radius: 21px;
+    border: 2px #00F2FF solid;
+    background-color: #3E3E3E;
+    font-size: 27px;
+    font-weight: 550;
+    color: #E7E7E7;
+    float: right;
+}
+
+.add-post-btn:hover {
+    background-color: #505050;
+}
+
+.add-post-btn:focus, 
+input[type="text"]:focus, 
+.new-post-text:focus, 
+.publish:focus {
+    outline: none;
+}
+
+.add-post {
+    position: absolute;
+    z-index: 999;
+    height: 246px;
+    width: 607px;
+    margin-left: 403px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 2px #E7E7E7 solid;
+}
+
+input[type="text"], .new-post-text {
+    display: block;
+    border: none;
+    background: none;
+    color: #E7E7E7;
+}
+
+.new-post-title, .new-post-text {
+    font-family: Noto Sans JP;
+    margin: 18px 0 0 29px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.new-post-text {
+    resize: none;
+    margin: 18px 25px 0px 29px; 
+    height: 115px; 
+    width: 550px;
+}
+
+.publish {
+    height: 44px;
+    width: 108px;
+    float: right;
+    margin: 0 38px 0 0;
+    background: none;
+    border-radius: 17px;
+    border: 2px #E7E7E7 solid;
+    color: #E7E7E7;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.publish:hover {
+    border-color: #00F2FF;
+}
+
+
+.nav-element {
+    width: 100%;
+    font-size: 31px;
+}
+
+.nav-element:hover {
+    color: #00F2FF;
+}
+
+.side-bar, .post-line, .post-content {
+    display: inline-block;
+}
+
+.side-bar{
+    padding-top: 44px;
+}
+
+.content, .post-content {
+    vertical-align: top;
+}
+
+.content {
+    margin-left: 240px;
+    display: inline-block;
+}
+
+.post {
+    height: 200px; /*тут нужен min height, т.к. посты могут быть длинными*/
+    margin-top: 46px;
+}
+.post-line {
+    height: 86%;
+    width: 10px;
+    background-color: #848484;
+}
+
+.post-content {
+    font-size: 20px;
+    width: 586px;
+    margin-left: 28px;
+}
+
+.article-name {
+    font-size: 31px;
+}
+
+.article-content, .article-info {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.article-info {
+    font-family: Sylfaen;
+    color: #898989;
+}
+
+.post-info {
+    margin-top: 13px;
+    float: right;
+    font-size: 20px;
+}
