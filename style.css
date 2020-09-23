@@ -67,6 +67,10 @@ input[type="text"]:focus,
     outline: none;
 }
 
+button.disabled {
+    border-color: #E7E7E7 !important;
+}
+
 .add-post {
     position: absolute;
     z-index: 999;

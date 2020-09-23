@@ -10,16 +10,17 @@
 <body>
     <header>
         <div class="top">
-            <img src="./logo_2.0.png" alt="logo" style="height: 86%;">
+            <img src="./logo.svg" alt="logo" style="height: 84%;">
+            <!-- <svg width="580" height="86%"" xmlns="./logo"></svg> -->
             <button class="add-post-btn">post</button>
         </div>
     </header>
     <main>
         <div class="add-post hide">
-            <form action="" method="post">
-                <input type="text" placeholder="Title" class="new-post-title">
-                <textarea name="" class="new-post-text" placeholder="Your story"></textarea>
-                <button class="publish">PUBLISH</button>
+            <form action="" method="post" class="modal__submit">
+                <input type="text" placeholder="Title" name="PostTitle" class="new-post-title">
+                <textarea  placeholder="Your story" name="PostText" class="new-post-text"></textarea>
+                <button class="publish disabled" disabled>PUBLISH</button>
             </form>
         </div>
         <div class="side-bar">
@@ -33,7 +34,7 @@
         </div>
 
         <div class="content">
-            <div class="post 1">
+            <div class="post 1" id="1">
                 <div class="post-line"></div>
                 <div class="post-content">
                     <div class="article-name">Test Name</div>
@@ -45,7 +46,7 @@
                     </div>
                 </div>
 
-            <div class="post 1">
+            <div class="post 2" id="2">
                 <div class="post-line"></div>
                 <div class="post-content">
                     <div class="article-name">Test Name</div>
@@ -59,8 +60,8 @@
                 
             </div>
             </div>
-            </div>
-            </div>
+            <!-- </div>
+            </div> -->
         </div>
     
     </main>
