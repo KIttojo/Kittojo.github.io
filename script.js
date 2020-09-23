@@ -1,5 +1,5 @@
 "use strict";
-
+//TEST
 const DataBase = [];
 
 const addPostBtn = document.querySelector('.add-post-btn'),
