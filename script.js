@@ -1,5 +1,5 @@
 "use strict";
-//TEST
+
 const DataBase = [];
 
 const addPostBtn = document.querySelector('.add-post-btn'),
@@ -48,3 +48,6 @@ modalSubmit.addEventListener('submit', event => {
 
     modalSubmit.reset();
 });
+
+document.cookie = "user=John"; // обновляем только куки с именем 'user'
+console.log(document.cookie); // показываем все куки
