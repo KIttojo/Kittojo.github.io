@@ -6,7 +6,7 @@ body {
     color: #E7E7E7;
     cursor: default;
 }
-/* TEST */
+
 header {
     height: 165px;
 }
@@ -72,11 +72,12 @@ button.disabled {
 }
 
 .add-post {
+    display: inline-block;
     position: absolute;
     z-index: 999;
     height: 246px;
     width: 607px;
-    margin-left: 403px;
+    margin-left: 257px;
     margin-top: 50px;
     border-radius: 20px;
     border: 2px #E7E7E7 solid;
@@ -99,7 +100,7 @@ input[type="text"], .new-post-text {
 .new-post-text {
     resize: none;
     margin: 18px 25px 0px 29px; 
-    height: 115px; 
+    height: 115px;
     width: 550px;
 }
 

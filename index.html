@@ -20,13 +20,6 @@
         </div>
     </header>
     <main>
-        <div class="add-post hide">
-            <form action="" method="post" class="modal__submit">
-                <input type="text" placeholder="Title" name="PostTitle" class="new-post-title">
-                <textarea  placeholder="Your story" name="PostText" class="new-post-text"></textarea>
-                <button class="publish disabled" disabled>PUBLISH</button>
-            </form>
-        </div>
         <div class="side-bar">
             <nav>
                 <ul>
@@ -36,9 +29,17 @@
                 </ul>
             </nav>
         </div>
+        
+        <div class="add-post hide">
+            <form action="" method="post" class="modal__submit">
+                <input type="text" placeholder="Title" name="PostTitle" class="new-post-title" maxlength="30">
+                <textarea  placeholder="Your story" name="PostText" class="new-post-text" maxlength="400"></textarea>
+                <button class="publish disabled" disabled>PUBLISH</button>
+            </form>
+        </div>
 
         <div class="content">
-            <div class="post 1" id="1">
+            <div class="post 1" id="1" onmouseover="updateViews(id);">
                 <div class="post-line"></div>
                 <div class="post-content">
                     <div class="article-name">Test Name</div>
@@ -49,6 +50,7 @@
                         <span class="article-info">d: 09.09.2020</span>
                     </div>
                 </div>
+            </div>
 
             <div class="post 2" id="2">
                 <div class="post-line"></div>
@@ -63,9 +65,7 @@
                 </div>
                 
             </div>
-            </div>
-            <!-- </div>
-            </div> -->
+            
         </div>
     
     </main>
