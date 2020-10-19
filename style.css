@@ -136,6 +136,9 @@ input[type="text"], .new-post-text {
 }
 
 .side-bar{
+    height: 247px;
+    position: sticky;
+    top: 0px;
     padding-top: 44px;
 }
 
@@ -169,6 +172,7 @@ input[type="text"], .new-post-text {
 }
 
 .article-content, .article-info {
+    word-break:break-all;
     font-weight: 500;
     font-size: 20px;
 }

@@ -20,9 +20,9 @@ const navElementsArray = Array.from(navElements);
 const modalSubmitElems = [...modalSubmit.elements].filter((elem) => elem.tagName != 'BUTTON');
 
 const renderPosts = () => {
-    DataBase.forEach(element => {
-        console.log(element);
-        content.insertAdjacentHTML('beforeend', `
+    let element = DataBase[DataBase.length - 1];
+    
+    content.insertAdjacentHTML('afterbegin', `
         <div class="post" id="${element.id}" onmouseover="updateViews(id);">
         <div class="post-line"></div>
         <div class="post-content">
@@ -34,8 +34,23 @@ const renderPosts = () => {
                 <span class="article-info">d: ${element.date}</span>
             </div>
         </div>
-        `)
-    });
+        `);
+    // DataBase.forEach(element => {
+    //     console.log(element);
+    //     content.insertAdjacentHTML('afterbegin', `
+    //     <div class="post" id="${element.id}" onmouseover="updateViews(id);">
+    //     <div class="post-line"></div>
+    //     <div class="post-content">
+    //         <div class="article-name">${element.PostTitle}</div>
+    //         <div class="article-content">${element.PostText}</div>
+    
+    //         <div class="post-info">
+    //             <span class="article-info">v: 5</span>
+    //             <span class="article-info">d: ${element.date}</span>
+    //         </div>
+    //     </div>
+    //     `)
+    // });
 };
 
 addPostBtn.onclick = function() {
