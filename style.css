@@ -123,11 +123,14 @@ input[type="text"], .new-post-text {
 
 
 .nav-element {
+    color: #E7E7E7;
+    text-decoration: none;
     width: 100%;
     font-size: 31px;
 }
 
-.nav-element:hover {
+.nav-element:hover, .nav-element:active {
+    text-decoration: none;
     color: #00F2FF;
 }
 
@@ -155,6 +158,7 @@ input[type="text"], .new-post-text {
     height: 200px; /*тут нужен min height, т.к. посты могут быть длинными*/
     margin-top: 46px;
 }
+
 .post-line {
     height: 86%;
     width: 10px;

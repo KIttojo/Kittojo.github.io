@@ -23,7 +23,7 @@ const renderPosts = () => {
     let element = DataBase[DataBase.length - 1];
     
     content.insertAdjacentHTML('afterbegin', `
-        <div class="post" id="${element.id}" onmouseover="updateViews(id);">
+        <div class="post" id="${element.id}" data-author="${document.cookie}" onmouseover="updateViews(id);">
         <div class="post-line"></div>
         <div class="post-content">
             <div class="article-name">${element.PostTitle}</div>
@@ -35,22 +35,6 @@ const renderPosts = () => {
             </div>
         </div>
         `);
-    // DataBase.forEach(element => {
-    //     console.log(element);
-    //     content.insertAdjacentHTML('afterbegin', `
-    //     <div class="post" id="${element.id}" onmouseover="updateViews(id);">
-    //     <div class="post-line"></div>
-    //     <div class="post-content">
-    //         <div class="article-name">${element.PostTitle}</div>
-    //         <div class="article-content">${element.PostText}</div>
-    
-    //         <div class="post-info">
-    //             <span class="article-info">v: 5</span>
-    //             <span class="article-info">d: ${element.date}</span>
-    //         </div>
-    //     </div>
-    //     `)
-    // });
 };
 
 addPostBtn.onclick = function() {
@@ -107,4 +91,29 @@ modalSubmit.addEventListener('submit', event => {
 //     console.log(id);
 // };
 
+function onloadPopular() {
+    console.log(DataBase);
+    DataBase.forEach(element => {
+        console.log(element);
+        // content.insertAdjacentHTML('afterbegin', `
+        // <div class="post" id="${element.id}" onmouseover="updateViews(id);">
+        // <div class="post-line"></div>
+        // <div class="post-content">
+        //     <div class="article-name">${element.PostTitle}</div>
+        //     <div class="article-content">${element.PostText}</div>
+    
+        //     <div class="post-info">
+        //         <span class="article-info">v: 5</span>
+        //         <span class="article-info">d: ${element.date}</span>
+        //     </div>
+        // </div>
+        // `);
+    });
+};
 
+function setUserId() {
+    const UsrId = new Date().valueOf();
+    if (!document.cookie) {
+        document.cookie = "user=" + UsrId;
+    }
+};
